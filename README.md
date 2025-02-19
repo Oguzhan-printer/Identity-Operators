@@ -4,10 +4,12 @@ This code snippet explores the behavior of the is operator in Python, which chec
 
 == (Equality Operator): Checks if the values of two variables are the same.
 is (Identity Operator): Checks if two variables refer to the same object in memory.
+
 Task 1: a = 256, b = 256, print(a is b)
 Result: True
 
 Reason: Python has a feature called "integer caching" for small integers (typically in the range [-5, 256]). When you assign the value 256 to a and then to b, Python reuses the same object in memory for both variables because 256 falls within this cached range. Therefore, a and b point to the same memory location, making a is b evaluate to True.
+
 Task 2: c = 257, d = 257, print(c is d)
 
 Result: False (usually, but it can depend on the python version or implementation)
